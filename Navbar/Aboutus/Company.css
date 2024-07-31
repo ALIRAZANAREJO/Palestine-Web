@@ -1,0 +1,237 @@
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #fdfdff;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+  }
+  .logo{
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+  }
+  main {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #image-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+  }
+  
+  #socialIcons ul {
+    font-size: 9rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+  }
+  
+  #socialIcons i {
+    color: #7fdbbb;
+    border: 0.2rem solid #7fdbbb;
+    padding: 0.5rem;
+    border-radius: 6rem;
+    list-style-type: none;  
+    transition: 0.5s;
+  }
+  
+  #socialIcons i:hover {
+    color: #50b893;
+  }
+  
+  .header-image {
+    height: 100vh;
+  }
+  
+  #content {
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8rem;
+    cursor: default;
+  }
+  
+  #contentNav {
+    display: flex;
+    gap: 5rem;
+    padding-top: 3rem;
+    padding-right: 3rem;
+  }
+  
+  #navmenu ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+  
+  #navmenu li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.7rem;
+    list-style-type: none;
+  }
+  
+  #navmenu li a {
+    color: #303c4e;
+    text-decoration: none;
+  }
+  
+  #navmenu li a:hover {
+    color: #7fdbbb;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  #contentText {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+  }
+  
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 8rem;
+    line-height: 7rem;
+    color: #303c4e;
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 40rem;
+  }
+  
+  button {
+    background-color: #7fdbbb;
+    padding: 0.5rem 2rem;
+    border: 0.1rem solid #7fdbbb;
+    border-radius: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #303c4e;
+    transition: 0.5s ease;
+  }
+  
+  button:hover {
+    background-color: #50b893;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+  }
+  
+  #footer {
+    display: flex;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  #contacts {
+    padding-left: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  #phone,
+  #adress {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #303c4e;
+  }
+  
+  #phone span {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #7fdbbb;
+    letter-spacing: 0.2rem;
+  }
+  
+  .icons {
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 600px) {
+    * {
+      font-size: 60%;
+    }
+  
+    main {
+      flex-direction: column-reverse;
+      width: auto;
+    }
+  
+    #content {
+      margin-right: 0rem;
+    }
+  
+    .logo {
+      height: 4rem;
+      margin-top: 5rem;
+    }
+  
+    #contentnav {
+      width: 40rem;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1rem;
+      padding-top: 3rem;
+    }
+  
+    #navmenu ul {
+      justify-content: flex-end;
+      padding-left: 2rem;
+    }
+  
+    #navmenu li + li {
+      margin-left: 2rem;
+    }
+  
+    h1 {
+      font-size: 7rem;
+    }
+  
+    button {
+      margin-bottom: 3rem;
+    }
+  
+    .header-image {
+      height: auto;
+      width: 33rem;
+      opacity: 0.5;
+    }
+  
+    #image-section {
+      min-height: 0vh;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0rem;
+    }
+  }
+
+  .contentText h1{
+    font-size: 50px;
+  }

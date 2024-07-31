@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  h1{
+    margin-left: 55vh;
+  }
+  input {
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid   #1f9623;; 
+    outline: none; 
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 40vh;
+   
+  }
+  .inputed::placeholder {
+    padding-left: 20px; 
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .step {
+    display: none;
+    text-align: center;
+  }
+  
+  .step.active {
+    display: block;
+  }
+  
+
+  
+  .amount-options,
+  .payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .amount-btn,
+  .payment-option {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .amount-btn:hover,
+  .payment-option:hover {
+    background-color: #1f9623;
+   cursor: pointer;
+  }
+  
+  .payment-option-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  
+  
+  .btn {
+    background-color: #1f9623;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: -50px;
+    width: 40vh;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .payment-info {
+    margin-top: 30px;
+  }
+  
+  .payment-info label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .payment-info input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .amount-btn,
+    .payment-option {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  .other-amount {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .other-amount label {
+    margin-right: 0.5rem;
+  }
+  
+  .other-amount input {
+    width: 200px;
+    margin-top: -1vh;
+    font-size: 1rem;
+  }
+  
+  .donate-summary {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  

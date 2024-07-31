@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  outline: none;
+}
+.background-image {
+  background-image: url('/Israel/img/5th\ Gen.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.img{
+  width: 50px;
+  height: 40px;
+  position: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 400px;
+  padding: 20px;
+  align-items: center;
+  display: wrap;
+  width: 500px;
+  padding-bottom: 20px;
+}
+
+.headline-container {
+  text-align: left;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1.2em;
+  position: left;
+  margin-bottom: 100px;
+}
+
+
+.card-container > span {
+  background-color: rgb(110, 110, 110);
+  color: #c4a484;
+  position: absolute;
+  font-family: PoppinsMedium;
+  top: 0px;
+  right: 0px;
+  padding: 50px;
+  width: 45px;
+  font-size: 12px;
+  text-align: center;
+  }
+
+.slider {
+  position: absolute;
+  bottom: 0; /* Position the slider at the bottom of the main container */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: calc(100vh - 60px); /* Adjust the max height to fit the viewport, considering the navbar height */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+  
+.container > h2 {
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 140px;
+  }
+  
+ .container > h2 > span {
+  color: rgba(255, 187, 0, 0.897);
+  }
+  .container > .h3 > span {
+    color: rgba(255, 187, 0, 0.897);
+    }
+    .container > h2 > span2 {
+      color: rgba(255, 0, 0, 0.897);
+      }
+  
+  .slider_content > p {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  }
+  .slider_content>img{
+  max-width: 40px;
+      height: 0px;
+  } 
+  
+
+    a {
+      text-decoration: none;
+      color: rgba(255, 187, 0, 0.897);
+    }
+
+    History>div{
+      padding: 70px;
+      padding-left: 200px;
+    }
+
+  
+.card:hover {
+  transform: scale(1.1); 
+}
+
+.card h1, .card p {
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.container{
+ margin-left: 700px;
+}
+
+.container{
+  margin-left: 90px;
+} 
+
+.span2{
+  color: red;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #00790a4d;
+    text-align: center;
+    background-color: #ffffff4d;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border-radius: 50%;
+    margin: 20px;
+    margin-bottom: -10px;
+    display: flex;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    box-sizing: border-box;
+}
+
+.info > h1 {
+font-size: x-large;
+font-family:Arial, Helvetica, sans-serif;
+color: rgb(1, 75, 1);
+}
+
+      .container > h2 {
+        font-size: 35px;
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 140px;
+        }
+      .container > h2 > span {
+        color: green
+        }
+        .card-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 100px;
+         
+        } 
+      
+        
+ 

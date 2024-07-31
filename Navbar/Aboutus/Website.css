@@ -1,0 +1,33 @@
+body{
+    color: black;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.background-image {
+    background-image: url('/images/flag.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+h1{
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    margin-top: 20vh;
+}
+p{
+    width: 400px;
+    align-items: center;
+    text-align: center;
+    margin-left: 80vh;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:inherit;
+}

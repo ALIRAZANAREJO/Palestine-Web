@@ -1,0 +1,174 @@
+/* Default styles */
+.video-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.card {
+  width: calc(50% - 20px); /* Set the width of each card to 50% minus margin */
+  background-color: rgba(236, 236, 236, 0.897);
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Add space between cards */
+.card:nth-child(even) {
+  margin-left: 20px; /* Add left margin to even cards */
+}
+
+.video {
+  width: 50%;
+}
+
+/* Adjust the video element height */
+.video video {
+  height: 500PX; /* Set the desired height */
+  width: 90%;
+  margin-top: -10px;
+  margin-left: -25px;
+  border-radius: 20px;
+}
+
+.content {
+  margin-left: 300px;
+  width:20%;
+  margin-top: -500px;
+  justify-content: space-between;
+  padding: 20px;
+}
+h1{
+  width: 200px;
+  font-size: 30px;
+}
+p{
+  font-size: 18px;
+  width:200px
+  ;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-left: -30px;
+}
+
+/* Example styles for icons */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Adjust the icon size */
+.icon img {
+  width: 100%;
+  height: auto;
+}
+
+/* Change color on click */
+.icon.like.active {
+  background-color: rgba(255, 0, 0, 0.712);
+  border-radius: 10px;
+}
+
+.icon.share.active {
+  background-color: rgba(0, 0, 252, 0.671);
+  border-radius: 10px;
+}
+
+.icon.comment.active {
+  background-color: rgba(255, 255, 0, 0.699);
+  border-radius: 10px;
+}
+
+.background-image {
+  background-image: url('/images/paletine.webp');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 400px;
+  padding: 20px;
+  align-items: center;
+  display: wrap;
+  width: 500px;
+  padding-bottom: 20px;
+}
+
+.headline-container {
+  text-align: left;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1.2em;
+  position: left;
+  margin-bottom: 100px;
+}
+
+
+
+ 
+.slider {
+  position: absolute;
+  bottom: 0; /* Position the slider at the bottom of the main container */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: calc(100vh - 60px); /* Adjust the max height to fit the viewport, considering the navbar height */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+  
+.container > h2 {
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 140px;
+  color: rgb(0, 0, 0);
+  margin-top: -20px;
+  }
+  
+ .container > h2 > span1 {
+    color: rgb(255, 255, 255);
+    }
+    .container > h2 > span2{
+        color: rgb(206, 0, 0);
+        }
+        .container > h2 > span3{
+            color: rgb(0, 165, 22);
+            }
+
+  
+  .slider_content > p {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  }
+

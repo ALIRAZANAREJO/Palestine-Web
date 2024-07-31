@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sign_up_page_main">
+        <div class="sign_up_form">
+            <form id="Register_form">
+                <h2 class="heading_sign_up">Sign up</h2>
+                <div class="input-container">
+                    <input type="text" id="name" name="name" placeholder="User Name" required>
+                    <img src="/images/user_12484547.png"  class="input-icon">
+                </div>
+        
+
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <img src="/images/email_2099199.png"  class="input-icon">
+                </div>
+
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <img src="/images/padlock_6417780.png"  class="input-icon">  
+                    <span class="toggle-password" id="toggle-password1">
+                </div>
+
+                <div class="input-container">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                    <img src="/images/padlock_6417780.png"  class="input-icon"> 
+                    <span class="toggle-password" id="toggle-confirm-password"> 
+                    </div>
+            <br>
+                        <button type="submit" id="Register_button" class="button">Register</button>
+                        <br>    
+                        <br>    
+                        <h3 class="Already_login">Already have an account?<a href="/index.html" class="login_link"> Login</a></h3>
+
+                    </form>
+
+                </div>
+            </div>
+    </div>
+    <script src="signup.js" type="module"></script>
+</body>

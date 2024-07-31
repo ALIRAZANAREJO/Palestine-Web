@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+  <link rel="stylesheet" href="Donate.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Donate</h1>
+    <a href="https://api.whatsapp.com/send?phone=923443237784&text=" target="_blank" class="whatsapp-button"></a>
+    <div id="step1" class="step active">
+      <h2>Step 1: Select Donation Amount</h2>
+      <div class="amount-options">
+        <button class="amount-btn" data-amount="100">$100</button>
+        <button class="amount-btn" data-amount="500">$500</button>
+        <button class="amount-btn" data-amount="2500">$2500</button>
+        <button class="amount-btn" data-amount="5000">$5000</button>
+        <div class="other-amount">
+          <label for="other-amount-input">Other Amount:</label>
+          <input type="number" id="other-amount-input" min="1" placeholder="Enter Amount in 0$">
+        </div>
+      </div>  
+      <button id="next-step1" class="btn" type="next-step1">Next</button>
+    </div>
+
+    <div id="step2" class="step">
+      <h2>Step 2: Fill Information</h2>
+      <div class="donate-summary">
+        <h3>Donate Amount: <span id="donate-amount">$0</span></h3>
+      </div>
+      <form>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="city" placeholder="City" required>
+        <input type="text" id="country" placeholder="Country" required>
+        <button id="next-step2" class="btn" type="button">Next</button>
+      </form>
+    </div>
+    <div id="step3" class="step">
+      <h2>Step 3: Choose Payment Option</h2>
+      <div class="donate-summary">
+        <h3>Donate Amount: <span id="donate-amount-step3">$0</span></h3>
+      </div>
+      <div class="payment-options">
+        <a href="https://easypaystg.easypaisa.com.pk/easypay-merchant/faces/pg/site/Login.jsf" target="_blank" class="payment-option">
+          <img src="/images/esaypaisa.jpg"  class="payment-option-image">
+          
+        </a>
+        <a href="https://www.jazzcash.com.pk/" target="_blank" class="payment-option">
+          <img src="/images/jz.png" alt="JazzCash" class="payment-option-image">
+        </a>
+        <a href="https://www.hbl.com/hblmobile" target="_blank" class="payment-option">
+          <img src="/images/hbl.png" alt="HBL Bank" class="payment-option-image">
+         Bank
+        </a>
+        <a href="https://www.ubldigital.com/GNB/Login.aspx?out=yes" target="_blank" class="payment-option">
+          <img src="/images/ubl.png" alt="UBL Bank" class="payment-option-image">
+         Bank
+        </a>
+        <a href="https://www.myaccountaccess.com/onlineCard/login.do" target="_blank" class="payment-option">
+          <img src="/images/credit-card.png" alt="Credit Card" class="payment-option-image">
+          Credit Card
+        </a>
+        <a href="https://www.paypal.com/us/signin" target="_blank" class="payment-option">
+          <img src="/images/paypal.png" alt="PayPal" class="payment-option-image">
+          PayPal
+        </a>
+        <a href="https://src.mastercard.com/profile/enroll?cmp=us.en-us.nam.mccom.EnrollInClicktoPay&locale=en_US" target="_blank" class="payment-option">
+          <img src="/images/card.png" alt="Mastercard" class="payment-option-image">
+          Mastercard
+        </a>
+        <a href="https://www.visa.com.au/en_au/account/login" target="_blank" class="payment-option">
+          <img src="/images/visa.png" alt="Visa" class="payment-option-image">
+          Visa
+        </a>
+      </div>
+    </div>
+    
+    
+
+    <div id="payment-page" class="step">
+      <h2>Complete Your Donation</h2>
+      <div class="payment-info">
+        <label for="easypaisa-account">Easypaisa Account Number:</label>
+        <input type="text" id="easypaisa-account" placeholder="Enter your Easypaisa account number">
+        <button id="pay-now" class="btn" type="pay-now">Pay Now</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="Donate.js"></script>
+</html>
+
+
+
+
+

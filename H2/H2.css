@@ -1,0 +1,318 @@
+.container h2 {
+width: 800px;
+font-size: 36px;
+margin-bottom: 20px;
+white-space: normal; /* Allow line breaks */
+overflow: hidden;
+flex-direction: column; /* Arrange spans vertically */
+align-items: center;
+position: relative;
+margin-left: -35vh;
+margin-top: 30px;
+}
+
+.container h2 > span {
+margin-right: 10px; /* Add gap between spans */
+position: relative; /* Add this line */
+}
+
+.container h2 .color1 { color: #1cbd0ee7; }
+.container h2 .color2 { color: #1cbd0ee7; }
+.container h2 .color3 { color: #000000; }
+.container h2 .color4 { color: #00b2dad8; }
+.container h2 .color5 { color: #e70f0fe8; }
+.container h2 .color6 { color: #ffae17ec; }
+
+
+.container h2 span::after {
+content: "|";
+font-size: 36px;
+color: #ff0000;
+animation: blink 0.8s infinite;
+position: absolute;
+right: -20px; /* Adjust the position of the cursor */
+top: 50%;
+transform: translateY(-50%);
+opacity: 0; /* Initially hide the cursor */
+}
+
+.container h2 span.show-cursor::after {
+opacity: 1; /* Show the cursor during the typing animation */
+}
+
+.color01 {
+color: #40c234;
+}
+.color02 {
+color: #ffffff;
+margin-left: -20px;
+} 
+ .color03 {
+color: #000000de;
+margin-left: -20px;
+} 
+ .color04 {
+   color: #f00000;
+   margin-left: -20px;
+   } 
+   
+
+
+
+/* 
+.container h2 .cursor {
+  font-size: 36px;
+  color: #333;
+  animation: blink 0.8s infinite;
+  margin-left: -20;
+}
+.container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  margin-left: -0vh; /* Add this line 
+}
+
+.cursor{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+
+  
+}
+.cursor::after {
+  font-size: 28px;
+  color: #ff0000;
+  animation: blink 0.5s infinite;
+  position: relative;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ */
+
+/* #text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+#text::after {
+  content: "|";
+  font-size: 28px;
+  color: #ff0000;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+} */
+
+
+/* .container h2,
+.container h3,
+.container h4,
+.container h5 {
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 140px;
+}
+.container > h2 > .span1 { color: rgb(0, 192, 0); }
+    .container > h2 > .span2 { color: rgb(255, 255, 255); }
+    .container > h2 > .span3 { color: rgb(0, 0, 0); }
+    .container > h2 > .span4 { color: rgb(0, 178, 233); }
+    .container > h2 > .span5 { color: rgb(226, 0, 0); }
+
+    .container > h3 { color: rgb(192, 0, 0); }
+
+
+    .container > h4 > .span1 { color: rgb(192, 192, 0); }
+    .container > h4 > .span2 { color: rgb(255, 255, 255); }
+    .container > h4 > .span3 { color: rgb(192, 0, 192); }
+    .container > h4 > .span4 { color: rgb(0, 233, 178); }
+    .container > h4 > .span5 { color: rgb(226, 226, 0); }
+
+    .container > h5 > .span1 { color: rgb(0, 192, 192); }
+    .container > h5 > .span2 { color: rgb(255, 255, 255); }
+    .container > h5 > .span3 { color: rgb(192, 192, 0); }
+    .container > h5 > .span4 { color: rgb(233, 0, 178); }
+    .container > h5 > .span5 { color: rgb(0, 226, 226); }
+.hidden {
+  display: none;
+}
+
+.typing-effect {
+  display: inline-block;
+  width: 10px;
+  height: 1em;
+  border-right: 2px solid;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}  */
+
+
+
+
+/* 
+.typing-effect {
+  display: inline-block;
+  width: 10px;
+  height: 1em;
+  border-right: 2px solid;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}  */
+
+
+
+
+
+
+
+
+
+
+/* 4 headings */
+/* .container h2,
+.container h3,
+.container h4,
+.container h5 {
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 140px;
+}
+
+.container > h2 > .span1,
+.container > h3 > .span1,
+.container > h4 > .span1,
+.container > h5 > .span1 {
+  color: rgb(0, 192, 0);
+}
+
+.container > h2 > .span2,
+.container > h3 > .span2,
+.container > h4 > .span2,
+.container > h5 > .span2 {
+  color: rgb(255, 255, 255);
+}
+
+.container > h2 > .span3,
+.container > h3 > .span3,
+.container > h4 > .span3,
+.container > h5 > .span3 {
+  color: rgb(0, 0, 0);
+}
+
+.container > h2 > .span4,
+.container > h3 > .span4,
+.container > h4 > .span4,
+.container > h5 > .span4 {
+  color: rgb(0, 178, 233);
+}
+
+.container > h2 > .span5,
+.container > h3 > .span5,
+.container > h4 > .span5,
+.container > h5 > .span5 {
+  color: rgb(226, 0, 0);
+}
+
+.hidden {
+  display: none;
+}
+
+.typing-effect {
+  display: inline-block;
+  width: 10px;
+  height: 1em;
+  border-right: 2px solid;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */
+
+
+ 
+ 
+ 
+ 
+ 
+ /* .container > h2 > span, 
+    .container > h3 > span,
+    .container > h4 > span,
+    .container > h5 > span {
+      font-size: 35px;
+      font-family: Arial, sans-serif;
+    }
+    .container > h2 > .span1 { color: rgb(0, 192, 0); }
+    .container > h2 > .span2 { color: rgb(255, 255, 255); }
+    .container > h2 > .span3 { color: rgb(0, 0, 0); }
+    .container > h2 > .span4 { color: rgb(0, 178, 233); }
+    .container > h2 > .span5 { color: rgb(226, 0, 0); }
+
+    .container > h3 > .span1 { color: rgb(192, 0, 0); }
+    .container > h3 > .span2 { color: rgb(255, 255, 255); }
+    .container > h3 > .span3 { color: rgb(0, 0, 192); }
+    .container > h3 > .span4 { color: rgb(178, 233, 0); }
+    .container > h3 > .span5 { color: rgb(0, 0, 226); }
+
+    .container > h4 > .span1 { color: rgb(192, 192, 0); }
+    .container > h4 > .span2 { color: rgb(255, 255, 255); }
+    .container > h4 > .span3 { color: rgb(192, 0, 192); }
+    .container > h4 > .span4 { color: rgb(0, 233, 178); }
+    .container > h4 > .span5 { color: rgb(226, 226, 0); }
+
+    .container > h5 > .span1 { color: rgb(0, 192, 192); }
+    .container > h5 > .span2 { color: rgb(255, 255, 255); }
+    .container > h5 > .span3 { color: rgb(192, 192, 0); }
+    .container > h5 > .span4 { color: rgb(233, 0, 178); }
+    .container > h5 > .span5 { color: rgb(0, 226, 226); }
+
+    .typing-effect {
+      border-right: 2px solid black;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    } */

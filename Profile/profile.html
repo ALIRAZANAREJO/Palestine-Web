@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/Profile/profile.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Profile</h2>
+    <div class="profile">
+      <img id="profileImg" src="default-profile.png" alt="Profile Image">
+      <input class="file" type="file" id="input_file" accept="image/*">
+      <input type="text" id="user_name" placeholder="Username">
+      <input type="text" id="user_email" placeholder="Email" readonly>
+      <button id="login_button">Update Profile</button>
+    </div>
+    <button id="signOutBtn">Sign Out</button>
+    </div>
+  <script type="module" src="/Profile/profile.js"></script>
+</body>
+</html>

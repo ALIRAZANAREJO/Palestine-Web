@@ -1,0 +1,381 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+  <style>.container2 h4 {
+    font-size: 36px;
+    overflow: hidden;  
+    position: relative;
+    margin-left: -35vh;
+    margin-top: 30px;
+    }
+    .span{
+      margin-left: 100px;
+    }
+    .container2{
+      margin-left: 100px;
+    }
+    
+ .color1 { color: #1cbd0ee7; }
+ .color2 { color: #ffffff; }
+ .color3 { color: #000000; }
+ .color4 { color: #00b2dad8; }
+ .color5 { color: #e70f0fe8; }
+ .color6 { color: #ffae17ec; }
+ .color7 { color: #ffae17ec; }
+ .color8 { color: #ffae17ec; }
+ .color9 { color: #ffae17ec; }
+ .color10 { color: #ffae17ec; }
+ .color11 { color: #ffae17ec; }
+ .color12 { color: #ffae17ec; }
+    
+    
+ #container2::after {
+  content: "|";
+  font-size: 28px;
+  color: #0478fd;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}</style>
+    <h4 class="container2" id="container2">
+        <span class="color1">Palestine</span>
+        <span class="color2">Hamas</span>
+        <span class="color3">War</span>
+        <span class="color4">BT</span>
+        <span class="color5">Country</span>
+        <span class="color6">Israel</span>
+        <span class="color7">Palestine</span>
+        <span class="color8">Hamas</span>
+        <span class="color9">War</span>
+        <span class="color10">BT</span>
+        <span class="color11">Country</span>
+        <span class="color12">Israel</span>
+        
+    </h4>
+<script>document.addEventListener('DOMContentLoaded', () => {
+  const spans = document.querySelectorAll('#container2 span');
+  let currentSpanIndex = 0;
+  let charIndex = 0;
+  let typing = true;
+
+  const typingSpeed = 10; // milliseconds per character
+  const deletingSpeed = 50; // milliseconds per character
+  const delayBetweenWords = 300; // milliseconds
+  const delayBetweenSpans = 1000; // milliseconds between typing different spans
+
+  function type() {
+      if (currentSpanIndex < spans.length) {
+          const currentSpan = spans[currentSpanIndex];
+          const fullText = currentSpan.dataset.text;
+
+          if (typing) {
+              if (charIndex < fullText.length) {
+                  currentSpan.style.visibility = 'visible';
+                  currentSpan.textContent = fullText.substring(0, charIndex + 1);
+                  charIndex++;
+                  setTimeout(type, typingSpeed);
+              } else {
+                  typing = false;
+                  setTimeout(type, delayBetweenWords);
+              }
+          } else {
+              if (charIndex > 0) {
+                  currentSpan.textContent = fullText.substring(0, charIndex - 1);
+                  charIndex--;
+                  setTimeout(type, deletingSpeed);
+              } else {
+                  currentSpan.style.visibility = 'hidden';
+                  typing = true;
+                  currentSpanIndex = (currentSpanIndex + 1) % spans.length;
+                  setTimeout(type, delayBetweenSpans);
+              }
+          }
+      }
+  }
+
+  // Initialize dataset.text with original span text and clear spans
+  spans.forEach(span => {
+      span.dataset.text = span.textContent;
+      span.textContent = '';
+  });
+
+  type();
+});</script>
+</body>
+</html> 
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Typing Paragraphs</title>
+  <link rel="stylesheet" href="p.css">
+</head>
+<body>
+  <div class="container">
+    <h2 id="container">
+      <span class="color1">Palestine</span>
+      <span class="color2">Hamas</span>
+      <span class="color3">VS</span>
+      <br>
+      <span class="color4">Israel</span>
+      <span class="color5">WAR</span>
+      <span class="color6">1917 To 2024</span>
+      
+    </h2>
+
+ <script type="module" src="p.js"></script>
+</body>
+</html> -->
+
+
+
+pdfcsadlnvdsk
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Typing Paragraphs</title>
+  <link rel="stylesheet" href="p.css">
+  <div class="container" >
+    <div id="text"></div>
+
+    <script type="module" src="p.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Typing Paragraphs</title>
+  <style>
+
+
+    .container {
+      max-width: 800px;
+      padding: 40px;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    #paragraph {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    #paragraph::after {
+      content: "|";
+      font-size: 28px;
+      color: #ff0000;
+      animation: blink 0.5s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="paragraph">
+      <span id="text"></span>
+    </div>
+  </div>
+  <script>
+    const paragraphs = [
+      "This is the first paragraph. It will be typed out one character at a time.",
+      "This is the second paragraph. It will be typed out one character at a time as well.",
+      "This is the third paragraph. It will be typed out one character at a time, just like the others."
+    ];
+
+    let currentIndex = 0;
+    let intervalId;
+
+    function typeNextParagraph() {
+      const textElement = document.getElementById('text');
+      textElement.textContent = '';
+
+      intervalId = setInterval(() => {
+        if (textElement.textContent.length === paragraphs[currentIndex].length) {
+          clearInterval(intervalId);
+          currentIndex++;
+
+          if (currentIndex === paragraphs.length) {
+            currentIndex = 0;
+          }
+
+          typeNextParagraph();
+        } else {
+          textElement.textContent += paragraphs[currentIndex][textElement.textContent.length];
+          updateCursorPosition();
+        }
+      }, 100);
+    }
+
+    function updateCursorPosition() {
+      const cursorElement = document.querySelector('.blinking-cursor');
+      cursorElement.style.marginLeft = `${document.getElementById('text').offsetWidth}px`;
+    }
+
+    typeNextParagraph();
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Typing Paragraphs</title>
+  <link rel="stylesheet" href="p.css">
+  <div class="container" >
+    <div class="headline-container" id="headlineContainer"></div>
+
+    <script type="module" src="p.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- 
+  <div class="container">
+    <p id="p1" style="display: none;"></p>
+    <p id="p2" style="display: none;"></p>
+    <p id="p3" style="display: none;"></p>
+    <p id="p4" style="display: none;"></p>
+    <p id="p5" style="display: none;"></p>
+    <p id="p6" style="display: none;"></p>
+    <p id="p7" style="display: none;"></p>
+    <p id="p8" style="display: none;"></p>
+    <p id="p9" style="display: none;"></p>
+    <p id="p10" style="display: none;"></p>
+  </div>
+  
+ -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="p.css">
+</head>
+<body>
+  <div class="container">
+    <h2 id="typedText1" class="hidden">
+      <span class="span1">Palestine </span>
+      <span class="span2">Hamas</span>
+      <span class="span3"> VS</span>
+      <span class="span4"> Israel</span>
+      <span class="span5">WAR</span>
+    </h2>
+    <h3 id="typedText2" class="hidden">
+      <span class="span1">Heading3 </span>
+      <span class="span2">Text2</span>
+      <span class="span3"> Text3</span>
+      <span class="span4"> Text4</span>
+      <span class="span5"> Text5</span>
+    </h3>
+    <h4 id="typedText3" class="hidden">
+      <span class="span1">Heading4 </span>
+      <span class="span2">Text2</span>
+      <span class="span3"> Text3</span>
+      <span class="span4"> Text4</span>
+      <span class="span5"> Text5</span>
+    </h4>
+    <h5 id="typedText4" class="hidden">
+      <span class="span1">Heading5 </span>
+      <span class="span2">Text2</span>
+      <span class="span3"> Text3</span>
+      <span class="span4"> Text4</span>
+      <span class="span5"> Text5</span>
+    </h5>
+    <div class="headline-container" id="headlineContainer"></div>
+  </div>
+<script type="module" src="p.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    <h1 id="container">
+        <span id="span1" class="color1">Palestine</span>
+        <span id="span2" class="color2">Hamas</span>
+        <span id="span3" class="color3">War</span>
+        <span id="span4" class="color4">BT</span>
+        <span id="span5" class="color5">Country</span>
+        <span id="span6" class="color6">Israel</span>
+    </h1>
+    <script src="p.js"></script>
+</body>
+</html> -->
