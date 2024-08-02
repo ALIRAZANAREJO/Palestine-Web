@@ -3,14 +3,14 @@ import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from "
 import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBU1hAfS6lBhqUEqkojudb9wxeMhfm1KSU",
-    authDomain: "noted-door-402706.firebaseapp.com",
-    databaseURL: "https://noted-door-402706-default-rtdb.firebaseio.com",
-    projectId: "noted-door-402706",
-    storageBucket: "noted-door-402706.appspot.com",
-    messagingSenderId: "1061156658421",
-    appId: "1:1061156658421:web:a2db8c244c8b3698f2b9bc",
-    measurementId: "G-BN6E8PC088"
+    apiKey: "AIzaSyDDnnWOWzcakwk5j78HDU7m2teW5xaBIR0",
+    authDomain: "login-form-31f15.firebaseapp.com",
+    databaseURL: "https://login-form-31f15-default-rtdb.firebaseio.com",
+    projectId: "login-form-31f15",
+    storageBucket: "login-form-31f15.appspot.com",
+    messagingSenderId: "869324969611",
+    appId: "1:869324969611:web:d7294ad740cfa82f4f268e",
+    measurementId: "G-QFN454B34Y"
   };
 const app = initializeApp(firebaseConfig);
 const dp = getFirestore(app);
